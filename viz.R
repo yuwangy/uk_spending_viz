@@ -18,9 +18,10 @@ head(new_data)
 
 bar_plot <- ggplot(data = new_data, aes(x = `UK SPENDING 2010-11`, 
                                         y = spending)) +
-  geom_bar(stat="identity") +
+  geom_bar(stat="identity", fill = "blue") +
   ggtitle("Plot of Department Spending 2010-11") +
   xlab("Department section") +
-  ylab("Spending")
+  ylab("Spending") +
+  theme(axis.text.x = element_text(hjust = 2))
 
 bar_plot
