@@ -15,3 +15,11 @@ data = data.rename(columns = {'Unnamed: 1': '09_10_spending',
 'Unnamed: 2': '10_11_spending'})
 data.head(5)
 
+
+bar_plot = alt.Chart(data).mark_bar().encode(
+    alt.X('UK SPENDING 2010-11'),
+    alt.Y('10_11_spending')
+)
+
+bar_plot
+
