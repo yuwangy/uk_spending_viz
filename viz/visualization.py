@@ -23,3 +23,16 @@ bar_plot = alt.Chart(data).mark_bar().encode(
 
 bar_plot
 
+
+install.packages("ggplot2")
+install.packages("readr")
+install.packages("dplyr")
+library(ggplot2)
+library(readr)
+library(dplyr)
+
+
+
+
+
+
