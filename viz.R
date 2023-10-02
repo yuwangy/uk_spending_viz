@@ -1,6 +1,6 @@
-install.packages("ggplot2")
-install.packages("readr")
-install.packages("dplyr")
+# install.packages("ggplot2")
+# install.packages("readr")
+# install.packages("dplyr")
 library(ggplot2)
 library(readr)
 library(dplyr)
@@ -22,6 +22,12 @@ bar_plot <- ggplot(data = new_data, aes(x = `UK SPENDING 2010-11`,
   ggtitle("Plot of Department Spending 2010-11") +
   xlab("Department section") +
   ylab("Spending") +
-  theme(axis.text.x = element_text(hjust = 2))
+  theme(axis.text.x = element_text(hjust = 15)) +
+  scale_fill_gradient(low="lightblue", high="blue")
 
 bar_plot
+
+
+
+
+
